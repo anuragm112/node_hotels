@@ -9,7 +9,7 @@ app.use(bodyParser.json());//req.body
 //.env is used to manage important information or sensitive information
 app.use('/person',personRouter);
 app.use('/menuItems',menuRouter);
-const PORT= process.env.PORT;
+const PORT= process.env.PORT || 4000;
 app.listen(PORT,()=>{
    console.log("Server Connected");
 });
