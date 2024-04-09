@@ -118,3 +118,4 @@ route.post('/signup',async(req,res)=>{
 //  "address": "Kachwa Road, Karnal",
 //  "contact": 8965567881,
 //  "salary": 600000,
+//yuguig
