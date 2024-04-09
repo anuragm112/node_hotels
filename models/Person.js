@@ -1,4 +1,5 @@
 const mongoose=require('mongoose');
+const bcrypt=require('bcrypt');
 const PersonSchema=new mongoose.Schema({
    name:{
     type: String,
@@ -28,6 +29,14 @@ const PersonSchema=new mongoose.Schema({
    salary:{
     type: Number,
     required: true
+   },
+   username:{
+    required: true,
+    type: String
+   },
+   password:{
+    required: true,
+    type: String
    }
 });
 const Person=new mongoose.model('Person',PersonSchema);
